@@ -6,7 +6,7 @@
 
 var httpServer = require('http');//导入HTTP模块
 var server = httpServer.createServer(function (request, response) {
-
+    console.log( "Get An Client Request");
     response.writeHead(200,{"Content-Type" : "text/plain"});
     response.write("Hello Buddy ");
     response.end("ok");
